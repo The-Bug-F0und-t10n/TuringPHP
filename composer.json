@@ -1,0 +1,30 @@
+{
+    "name": "mrashirak/turing",
+    "description": "Framework Zion PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+      "name": "Vinicius Cesar Dias",
+      "email": "dias.viniciuscesar@gmail.com",
+			"role":"Developer"  			
+    }
+		,{
+      "name": "MrAshirak",
+			"email": "email@email.com",
+			"role":"Developer"  			
+    }],
+    "autoload": {
+        "psr-4": {
+             "zion\\": "src/zion/"
+         },
+         "files": ["initialize.php"]
+      },
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "phpmailer/phpmailer": "^6.9" 
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+	  "minimum-stability": "dev"
+}
