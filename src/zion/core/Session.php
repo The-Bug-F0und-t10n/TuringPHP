@@ -130,7 +130,7 @@ class Session
         }
         self::$folder = \zion\APP_ROOT . "tmp" . \DS . "session" . \DS;
     
-        if (empty(self::$id) && !empty($_COOKIE)) {
+        if (empty(self::$id) && !empty($_COOKIE[self::$sessionKey])) {
     
             self::$id = $_COOKIE[self::$sessionKey];
         }
